@@ -131,7 +131,7 @@
                                     Previous
                                 </a>
                                 <div aria-labelledby="navbarDropdown" class="dropdown-menu">
-                                    <a class="dropdown-item" href="LID2019">LID 2019</a>
+                                    <a class="dropdown-item" href="http://forlq.org/">RLQ'19</a>
                                 </div>
                             </li>
                         </ul>
@@ -154,27 +154,22 @@
             <div class="col-lg-12" id="challenge1">
 
                 <!-- <p style="text-align: justify">We will organize the second Learning from Imperfect Data (LID) challenge on object semantic segmentation and scene parsing, which includes two competition tracks.  </p>  （<strong>challenge deadline: June 8, 2019</strong>） -->
-                <p>In conjunction with this workshop, we will hold three challenges this
+                <p>In conjunction with this workshop, we will hold Tiny Object Detection (TOD) challenges this
                     year.</p>  <!--（<strong>challenge deadline: June 8, 2019</strong>）-->
 
                 <div class="section-title">
-                    <h1>Track1</h1>
-                    <h4>Weakly-supervised Semantic Segmentation</h4>
+                    <h1>Track</h1>
+                    <h4>Tiny Object Detection</h4>
                 </div>
                 <div class="trend-entry d-flex">
                     <div class="trend-contents">
                         <p>
-                            This track targets on learning to perform object semantic segmentation using image-level
-                            annotations as supervision [1, 2, 3]. The dataset is built upon the image detection track of
-                            ImageNet Large Scale Visual Recognition Competition (ILSVRC) [4], which totally includes
-                            456, 567 training images from 200 categories. We provide pixel-level annotations of 15K
-                            images (validation/testing: 5, 000/10, 000) for evaluation.
+                            TBD
                         </p>
                         <!-- </br> -->
 
                         <ul>
-                            <!-- <li> For training, all the images in the training set of ILSVRC DET are permitted. </li> -->
-                            <!-- <li> If supervised saliency detection is applied, only MSRA-B dataset is permitted.  </li> -->
+                            <!--
                             <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 200 categories.</li>
                             <li><strong>Download: </strong> The training dataset is available at <a
                                     href="http://image-net.org/image/ILSVRC2017/ILSVRC2017_DET.tar.gz">Imagenet DET</a>
@@ -185,69 +180,9 @@
                             <li><strong>Submission: </strong> <a
                                     href="https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/276/overview</a>
                             </li>
+                            -->
                         </ul>
 
-                    </div>
-                </div>
-            </div>
-
-            <!-- Challenge 2-->
-
-            <div class="col-lg-12" id="challenge2">
-                <div class="section-title">
-                    <h1>Track2</h1>
-                    <h4> Weakly-supervised Scene Parsing</h4>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <!-- <p> Beyond object segmentation, background categories such as wall, road, sky need to be further specified for the scene parsing, which is a challenging task compared with object semantic segmentation. Thus, it will be more difficult and expensive to manually annotate pixel-level mask for this task. In this track, we propose to leverage several labeled points that are much easier to obtain to guide the training process.
-      The dataset is built upon the well-known ADE20K, which includes 20,210 training images from 150 categories. We provide the point-based annotations on the training set. Please download the data from <a href="http://sceneparsing.csail.mit.edu/data/LID2019"> LID Challenge Track2 data </a>. <br/> -->
-                        <p> This track targets on learning to perform scene parsing using points-based annotation as
-                            supervision. The dataset is built upon the ADE20K dataset [5]. There are 20,210 images in
-                            the training set, 2,000 images in the validation set, and 3,000 images in the testing set.
-                            We provide the additional point-based annotations on the training set [6].
-                        </p>
-                        <!-- </br> -->
-                        <!-- <strong> <span class="text-danger">*Note:</span> </strong> -->
-                        <!-- </p> -->
-                        <ul>
-                            <li><strong>Evalution:</strong> Mean Intersection-Over-Union (IoU) score over 150 categories.</li>
-                            <li><strong>Download: </strong> Please download the data from <a
-                                    href="http://sceneparsing.csail.mit.edu/data/LID2019"> LID Challenge Track2 data</a>
-                            </li>
-                            <li><strong>Submission: </strong> <a
-                                    href="https://evalai.cloudcv.org/web/challenges/challenge-page/300/overview">https://evalai.cloudcv.org/web/challenges/challenge-page/300/overview</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Challenge 3-->
-            <div class="col-lg-12" id="challenge3">
-                <div class="section-title">
-                    <h1>Track3</h1>
-                    <h4> Weakly-supervised Object Localization</h4>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-                        <p> This track targets on making the classification networks be equipped with the ability of
-                            object localization [7, 8, 9]. The dataset is built upon the image
-                            classification/localization track of ImageNet Large Scale Visual Recognition Competition
-                            (ILSVRC), which totally includes 1.2 million training images from 1000 categories. We
-                            provide pixel-level annotations of 44, 271 images (validation/testing: 23, 151/21, 120) for
-                            evaluation.
-                        </p>
-                        <ul>
-                            <li><Strong>Evalution:</Strong> IoU curve. With the predicted object localization map, we calculate
-                                the IoU scores between the foreground pixels and the ground-truth masks under different
-                                thresholds. In the ideal curve, the highest IoU score is expected to close to 1.0. The
-                                threshold value corresponding to the highest IoU score is expected to be 255 since the
-                                higher threshold values can reflect a higher contrast between the target object and the
-                                background.
-                            </li>
-                            <li> <Strong>Download: </Strong> Will be announced soon.</li>
-                            <li> <Strong>Submission: </Strong> Will be announced soon. </li>
                     </div>
                 </div>
             </div>
@@ -263,23 +198,7 @@
                         <p> This year, we have two strict rules for all competitors.
                         </p>
                         <ol>
-                            <li> For training, only the images provided in the training set are permitted.
-                                Competitors can use the classification models pre-trained on the training set of
-                                ILSVRC CLS-LOC to initialize the parameters but <strong
-                                        class="text-danger">CANNOT</strong> leverage any datasets with
-                                pixel-level annotations.
-                                In particular, for Track 1 and Track 3, only the image-level annotations of 
-                                training images can be leveraged for supervision and the bounding-box annotations 
-                                are <strong class="text-danger">NOT</strong> permitted.
-                            </li>
-                            <li>We encourage competitors to design elegant and effective models competing for all
-                                the tracks rather than ensembling multiple models.
-                                Therefore, we restrict the parameter size of the inference model(s) should be <strong
-                                        class="text-danger">LESS
-                                    than 150M</strong> (slightly more than two DeepLab V3+ [10] models using Resnet 101 as the
-                                backbone). The
-                                competitors ranked at Top-3 are required to submit the inference code for
-                                verification.
+                            <li> TBD
                             </li>
                         </ol>
                     </div>
@@ -294,13 +213,7 @@
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
                     <p>
-                        This year, Baidu Inc will provide cash awards to the winners of each track. 
-                        Participants are encouraged to submit the inference code based on the deep learning platform
-                         <a href="https://github.com/PaddlePaddle/Paddle">PaddlePaddle</a>
-                         , especially on the semantic segmentation toolkit <a href="https://github.com/PaddlePaddle/PaddleSeg">PaddleSeg</a>.
-                        <strong class="text-danger">Winners will receive a cash award of USD 2000 if they use the
-                            PaddlePaddle platform or a
-                            USD 500 cash award if other deep learning platforms are used.</strong>
+                        TBD
                     </p>
                 </div>
             </div>
@@ -313,17 +226,7 @@
                 <h2>References</h2>
             <div class="trend-entry d-flex">
                 <div class="trend-contents">
-                <p>[1] George Papandreou, Liang-Chieh Chen, Kevin Murphy, and Alan L Yuille. Weakly-and semi-supervised learning of a dcnn for semantic image segmentation. In ICCV, 2015.</p>
-                <p>[2] Yunchao Wei, Huaxin Xiao, Honghui Shi, Zequn Jie, Jiashi Feng, and Thomas S Huang. Revisiting dilated convolution: A simple approach for weakly-and semi-supervised semantic segmentation. In CVPR, 2018.</p>
-                <p>[3] Peng-Tao Jiang, Qibin Hou, Yang Cao, Ming-Ming Cheng, Yunchao Wei, and Hong-Kai Xiong. Integral object mining via online attention accumulation. In ICCV, 2019.</p>
-                <p>[4] Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. Imagenet: a large-scale hierarchical image database. In CVPR, 2009.</p>
-                <p>[5] Bolei Zhou, Hang Zhao, Xavier Puig, Sanja Fidler, Adela Barriuso, and Antonio Torralba. Scene parsing through ade20k dataset. In CVPR, 2017.</p>
-                <p>[6] Rui Qian, Yunchao Wei, Honghui Shi, Jiachen Li, Jiaying Liu, and Thomas Huang. Weakly Supervised Scene Parsing with Point-based Distance Metric Learning. In AAAI, 2019</p>
-                <p>[7] Bolei Zhou, Aditya Khosla, Agata Lapedriza, Aude Oliva, and Antonio Torralba.  Learning Deep Features for Discriminative Localization. In IEEE CVPR, 2016.</p>
-                <p>[8] Xiaolin Zhang, Yunchao Wei, Jiashi Feng, Yi Yang, and Thomas Huang. Adversarial complementary learning for weakly supervised object localization. In IEEE CVPR, 2018.</p>
-                <p>[9] Xiaolin Zhang, Yunchao Wei, Guoliang Kang, Yi Yang, and Thomas Huang. Self-produced guidance for weakly-supervised object localization. In ECCV, 2018.</p>
-                <p>[10] Liang-Chieh Chen, Yukun Zhu, George Papandreou, Florian Schroff, and Hartwig Adam. Encoder-decoder with atrous separable convolution for semantic image segmentation. In ECCV, 2018.</p>
-
+                <p>TBD
                 </div>
             </div>
             </div>
